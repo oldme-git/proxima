@@ -1,8 +1,8 @@
 grpc:
-  name:             "word"
-  address:          ":32002"
+  name:    "word"
+  address: ":32002"
 
 database:
   default:
-    link:  "mysql:root:12345678@tcp(srv.com:3306)/word"
+    link:  "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
     debug: true

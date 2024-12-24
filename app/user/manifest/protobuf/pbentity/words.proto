@@ -1,0 +1,23 @@
+// ==========================================================================
+// Code generated and maintained by GoFrame CLI tool. DO NOT EDIT.
+// ==========================================================================
+
+syntax = "proto3";
+
+package pbentity;
+
+option go_package = "proxima/app/user/api/pbentity";
+
+import "google/protobuf/timestamp.proto";
+
+message Words {
+    uint32                    Id                 = 1; //
+    uint32                    Uid                = 2; //
+    string                    Word               = 3; //
+    string                    Definition         = 4; //
+    string                    ExampleSentence    = 5; //
+    string                    ChineseTranslation = 6; //
+    string                    Pronunciation      = 7; //
+    google.protobuf.Timestamp CreatedAt          = 8; //
+    google.protobuf.Timestamp UpdatedAt          = 9; //
+}

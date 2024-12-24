@@ -1,12 +1,14 @@
 module proxima
 
-go 1.23.4
+go 1.22
 
 require (
 	github.com/gogf/gf/contrib/drivers/mysql/v2 v2.8.2
 	github.com/gogf/gf/contrib/registry/etcd/v2 v2.8.2
 	github.com/gogf/gf/contrib/rpc/grpcx/v2 v2.8.2
 	github.com/gogf/gf/v2 v2.8.2
+	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/golang/protobuf v1.5.4
 	google.golang.org/grpc v1.68.1
 	google.golang.org/protobuf v1.35.2
 )
@@ -25,7 +27,6 @@ require (
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/gogf/gf/contrib/registry/file/v2 v2.8.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/grokify/html-strip-tags-go v0.1.0 // indirect

@@ -1,8 +1,8 @@
 gfcli:
   gen:
     dao:
-      - link: "mysql:root:12345678@tcp(srv.com:3306)/word"
+      - link: "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
         descriptionTag: true
 
     pbentity:
-      - link: "mysql:root:12345678@tcp(srv.com:3306)/word"
+      - link: "mysql:root:12345678@tcp(127.0.0.1:3306)/test"

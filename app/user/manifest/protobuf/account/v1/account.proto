@@ -4,37 +4,37 @@ package account.v1;
 
 option go_package = "proxima/app/user/api/account/v1";
 
-import "pbentity/users.proto";
+import "pbentity/user.proto";
 
 service Account{
-  rpc UserRegister(UserRegisterReq) returns (UserRegisterRes) {}
-  rpc UserLogin(UserLoginReq) returns (UserLoginRes) {}
-  rpc UserInfo(UserInfoReq) returns (UserInfoRes) {}
+  rpc Register(RegisterReq) returns (RegisterRes) {}
+  rpc Login(LoginReq) returns (LoginRes) {}
+  rpc Info(InfoReq) returns (InfoRes) {}
 }
 
-message UserRegisterReq {
-  string username = 1; // v:required|min-length:2
+message RegisterReq {
+  string passport = 1; // v:required|min-length:2
   string password = 2; // v:required|min-length:6
   string email = 3; // v:required|email
 }
 
-message UserRegisterRes {
+message RegisterRes {
   int32 id = 1;
 }
 
-message UserLoginReq {
-  string username = 1; // v:required|min-length:2
+message LoginReq {
+  string passport = 1; // v:required|min-length:2
   string password = 2; // v:required|min-length:6
 }
 
-message UserLoginRes {
+message LoginRes {
   string token = 1;
 }
 
-message UserInfoReq {
+message InfoReq {
   string token = 1; // v:required
 }
 
-message UserInfoRes {
-  pbentity.Users user = 1;
+message InfoRes {
+  pbentity.User user = 1;
 }

@@ -1,0 +1,20 @@
+// ==========================================================================
+// Code generated and maintained by GoFrame CLI tool. DO NOT EDIT.
+// ==========================================================================
+
+syntax = "proto3";
+
+package pbentity;
+
+option go_package = "proxima/app/user/api/pbentity";
+
+import "google/protobuf/timestamp.proto";
+
+message User {
+    uint32                    Id       = 1; // User ID
+    string                    Passport = 2; // User Passport
+    string                    Password = 3; // User Password
+    string                    Email    = 4; // User Email Address
+    google.protobuf.Timestamp CreateAt = 5; // Created Time
+    google.protobuf.Timestamp UpdateAt = 6; // Updated Time
+}
